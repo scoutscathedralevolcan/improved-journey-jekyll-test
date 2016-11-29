@@ -17,11 +17,11 @@
                 <ul class="nav navbar-nav navbar-right">
                 
 		  {% if page.url == "/" %}                
-		    <li class="hidden">
+		    <li class="page-scroll">
 		      <a href="#page-top"></a>
                     </li>
 		  {% else %}
-		    <li class="hidden">
+		    <li class="page-scroll">
 		      <a href="{{ site.baseurl }}#page-top"></a>
                     </li>
 		  {% endif %}
@@ -42,9 +42,15 @@
                     
                     {% for nav_hash in site.nav %}
 		      {% for nav_item in nav_hash %}
-			<li>
-			  <a href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
-			</li>
+			{% if page.url == "{{ nav_item[1] }}" %}
+			  <li class="page-scroll">
+			    <a href="#{{ page.title }}">{{ nav_item[0] }}</a>
+			  </li>
+			{% else %}
+			  <li class="page-scroll">
+			    <a href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+			  </li>
+			{% endif %}
 		      {% endfor %}
 		    {% endfor %}
 		    
