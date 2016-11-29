@@ -24,7 +24,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: fbico
       url: #
     - title: stack-overflow
       url: #
@@ -35,7 +35,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: fbico
       url: #
     - title: linkedin
       url: #
@@ -46,7 +46,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: facebook
+    - title: fbico
       url: #
     - title: google-plus
       url: #
@@ -55,14 +55,16 @@ people:
 social:
   #- title: twitter
     #url: http://twitter.com/jekyllrb
-  - title: facebook
+  - title: fbico
+    url:
+  - title: envelope
     url:
   #- title: stack-overflow
     #url: http://stackoverflow.com/questions/tagged/jekyll
   #- title: bitbucket 
     #url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
+    url: http://github.com/bioinfo-geek/improved-journey-jekyll-test
 
 # Postal address (add as many lines as necessary)
 #address:
