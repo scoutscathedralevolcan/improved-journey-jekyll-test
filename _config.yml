@@ -11,7 +11,7 @@ scrollnav:
   - Portfolio: "portfolio"
   - About: "about"
   - Team: "team"
-  - Contact: "contact"
+  #- Contact: "contact"
 
 nav:
   - NEWS: "news/"
