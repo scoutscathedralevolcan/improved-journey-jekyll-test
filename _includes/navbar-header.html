@@ -15,33 +15,29 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="{{ site.baseurl }}#contact">Contact</a>
-                    </li>
+                    
+                    {% for nav_hash in site.scrollnav %}
+		      {% for nav_item in nav_hash %}
+			{% if page.url == "/index.html" %}
+			  <li>
+			    <a class="page-scroll" href="#{{ nav_item[1] }}">{{ nav_item[0] }}/a>
+			  </li>
+			{% else %}
+			  <li>
+			    <a class="page-scroll" href="{{ site.baseurl }}#{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+			  </li>
+			{% endif %}
+		      {% endfor %}
+		    {% endfor %}
                     
                     {% for nav_hash in site.nav %}
 		      {% for nav_item in nav_hash %}
-			{% assign lowercase_nav_item = nav_item[0] | downcase %}
 			<li>
 			  <a class="page-scroll" href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
 			</li>
 		      {% endfor %}
 		    {% endfor %}
+		    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
