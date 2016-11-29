@@ -43,7 +43,6 @@
                     {% for nav_hash in site.nav %}
 		      {% for nav_item in nav_hash %}
 			<li>
-<!-- 			  <a class="page-scroll" href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a> -->
 			  <a href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
 			</li>
 		      {% endfor %}
@@ -56,16 +55,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
