@@ -1,6 +1,6 @@
 url: https://bioinfo-geek.github.io
 baseurl: /improved-journey-jekyll-test
-
+#https://bioinfo-geek.github.io/improved-journey-jekyll-test
 # Site settings
 title: Improved Journey
 email: your-email@domain.com
@@ -24,7 +24,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: fbico
+    - title: facebook
       url: #
     - title: stack-overflow
       url: #
@@ -35,7 +35,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: fbico
+    - title: facebook
       url: #
     - title: linkedin
       url: #
@@ -46,7 +46,7 @@ people:
   social:
     - title: twitter
       url: #
-    - title: fbico
+    - title: facebook
       url: #
     - title: google-plus
       url: #
@@ -55,7 +55,7 @@ people:
 social:
   #- title: twitter
     #url: http://twitter.com/jekyllrb
-  - title: fbico
+  - title: facebook
     url:
   - title: envelope
     url:
