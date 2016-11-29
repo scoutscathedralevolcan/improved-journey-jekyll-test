@@ -1,5 +1,5 @@
 url: https://bioinfo-geek.github.io
-baseurl: /improved-journey-jekyll-test/
+baseurl: /improved-journey-jekyll-test
 
 # Site settings
 title: Improved Journey
@@ -14,7 +14,7 @@ scrollnav:
   #- Contact: "contact"
 
 nav:
-  - NEWS: "news/"
+  - News: "/news/"
 
 # Team names, titles and social links
 people:
