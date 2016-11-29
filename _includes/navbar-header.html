@@ -15,13 +15,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                
 		  {% if page.url == "{{ site.url }}{{ site.baseurl }}" %}                
 		    <li class="hidden">
 		      <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
+                    asldjfljlkja oiejlk jds oifaj
 		  {% else %}
 		    <li class="hidden">
 		      <a href="{{ site.baseurl }}#page-top"></a>
@@ -30,7 +29,7 @@
                     
                     {% for nav_hash in site.scrollnav %}
 		      {% for nav_item in nav_hash %}
-			{% if page.url == "/index.html" %}
+			{% if page.url == "{{ site.url }}{{ site.baseurl }}" %}                
 			  <li>
 			    <a class="page-scroll" href="#{{ nav_item[1] }}">{{ nav_item[0] }}/a>
 			  </li>
