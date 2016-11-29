@@ -42,7 +42,7 @@
                     
                     {% for nav_hash in site.nav %}
 		      {% for nav_item in nav_hash %}
-		      {% if page.url == "{{ nav_item[1] }}" %}
+			{% if page.url == nav_item[1] %}
 			  <li class="page-scroll">
 			    <a href="#page-top">{{ nav_item[0] }} Voilà</a>
 			  </li>
