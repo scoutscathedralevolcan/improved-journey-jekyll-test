@@ -19,23 +19,29 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#services">Services</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#about">About</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#team">Team</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#contact">Contact</a>
+                        <a class="page-scroll" href="{{ site.baseurl }}#contact">Contact</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="/news">news</a>
-                    </li>
+                    
+                    {% for nav_hash in site.nav %}
+		      {% for nav_item in nav_hash %}
+			{% assign lowercase_nav_item = nav_item[0] | downcase %}
+			<li>
+			  <a class="page-scroll" href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+			</li>
+		      {% endfor %}
+		    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
