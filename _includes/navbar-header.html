@@ -22,7 +22,7 @@
                     </li>
 		  {% else %}
 		    <li class="page-scroll">
-		      <a href="{{ site.baseurl }}#page-top">Accueil</a>
+		      <a href="{{ site.baseurl }}">Accueil</a>
                     </li>
 		  {% endif %}
                     
@@ -44,7 +44,7 @@
 		      {% for nav_item in nav_hash %}
 			{% if page.url == "{{ nav_item[1] }}" %}
 			  <li class="page-scroll">
-			    <a href="#{{ page.title }}">{{ nav_item[0] }}</a>
+			    <a href="#page-top">{{ nav_item[0] }}</a>
 			  </li>
 			{% else %}
 			  <li class="page-scroll">
