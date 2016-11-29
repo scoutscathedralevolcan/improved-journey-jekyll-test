@@ -16,11 +16,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                 
-		  {% if page.url == "{{ site.url }}{{ site.baseurl }}" %}                
+		  {% if page.url == "/" %}                
 		    <li class="hidden">
 		      <a href="#page-top"></a>
                     </li>
-                    asldjfljlkja oiejlk jds oifaj
 		  {% else %}
 		    <li class="hidden">
 		      <a href="{{ site.baseurl }}#page-top"></a>
@@ -29,7 +28,7 @@
                     
                     {% for nav_hash in site.scrollnav %}
 		      {% for nav_item in nav_hash %}
-			{% if page.url == "{{ site.url }}{{ site.baseurl }}" %}                
+			{% if page.url == "/" %}                
 			  <li>
 			    <a class="page-scroll" href="#{{ nav_item[1] }}">{{ nav_item[0] }}/a>
 			  </li>
@@ -56,8 +55,6 @@
         <!-- /.container-fluid -->
     </nav>
 
-    
-    {{ page.url }}
 <!--
         {% for page in site.pages %}
           {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
