@@ -2,7 +2,7 @@
 layout: page
 title: News
 description:
-header-img: "img/histoire-bg.jpg"
+header-img: "/img/reservation-bg.jpg"
 permalink: /news/
 --- 
 
