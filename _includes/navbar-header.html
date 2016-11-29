@@ -15,6 +15,16 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                
+		  {% if page.url == "/index.html" %}                
+		    <li class="hidden">
+		      <a href="#page-top"></a>
+                    </li>
+		  {% else %}
+		    <li class="hidden">
+		      <a href="{{ site.baseurl }}#page-top"></a>
+                    </li>
+		  {% endif %}
                     
                     {% for nav_hash in site.scrollnav %}
 		      {% for nav_item in nav_hash %}
@@ -33,7 +43,8 @@
                     {% for nav_hash in site.nav %}
 		      {% for nav_item in nav_hash %}
 			<li>
-			  <a class="page-scroll" href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+<!-- 			  <a class="page-scroll" href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a> -->
+			  <a href="{{ site.baseurl }}{{ nav_item[1] }}">{{ nav_item[0] }}</a>
 			</li>
 		      {% endfor %}
 		    {% endfor %}
