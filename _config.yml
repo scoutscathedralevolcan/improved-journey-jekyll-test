@@ -16,6 +16,7 @@ scrollnav:
 
 nav:
   - News: "/news/"
+  - Galerie Photo: "/galerie-photo/"
 
 # Team names, titles and social links
 people:
@@ -72,6 +73,9 @@ social:
   #- line: 3481 Melrose Place
   #- line: Beverly Hills, CA 90210
 
+exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", "docs/" ]
+
+  
 # Build settings
 markdown: kramdown
 permalink: pretty
