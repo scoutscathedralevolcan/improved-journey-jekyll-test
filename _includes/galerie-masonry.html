@@ -1,9 +1,9 @@
 <!-- jQuery -->    
 <head>
-	<meta content="charset=utf-8">
-    <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/magnificpopup.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/galeries.css" | prepend: site.baseurl }}">
+  <meta content="charset=utf-8">
+  <link rel="stylesheet" href="{{ "/css/selena.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/magnificpopup.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/galeries.css" | prepend: site.baseurl }}">
 </head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
@@ -43,9 +43,7 @@ image: {
 <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
 <div class="gallery masonry-gallery">
-		
 {% for image in page.images %}  		
-
   <figure class="gallery-item">
     <header class='gallery-icon'>
       <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
@@ -57,8 +55,6 @@ image: {
 	  <p>{{image.copyright}}</p>
 	</div>
     </figcaption>
-  </figure>
-				
+  </figure>		
 {% endfor %}
-
 </div>

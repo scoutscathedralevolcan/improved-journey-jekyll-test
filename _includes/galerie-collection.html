@@ -6,45 +6,31 @@
     <link rel="stylesheet" href="{{ "/css/magnificpopup.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/galeries.css" | prepend: site.baseurl }}">
 </head>
-hh
-
-    <body class="gallery">
- 
-	<section id="content" role="main">
-		<div class="wrapper">
-	
-			<h2>{{page.title}}</h2>
-			
-			<!-- Gallery __-->
-			<div class="gallery masonry-gallery">
-				
-{% for image in page.images %}  	
-
-	               <figure class="gallery-item">
-                         <figure class="effect-selena">
-					<header class='gallery-icon'>
-		       
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
-
-					</header>	
-					<figcaption class='gallery-caption'>
-						<div class="entry-summary">
-							<h3>{{image.gallery-name}}</h3>
-							<p>{{image.gallery-date}}</p>
-						</div>
-					</figcaption>
-                       </figure>
-				</figure>
-							
-{% endfor %}		
-				
-			</div>
-			
-		</div><!-- END .wrapper -->
-	</section>
-
-
+<body class="gallery">
+  <section id="content" role="main">
+    <div class="wrapper">
+      <!-- Gallery __-->
+      <div class="gallery masonry-gallery">
+	{% for image in page.images %}  	
+	  <figure class="gallery-item">
+	    <figure class="effect-selena">
+	      <header class='gallery-icon'>
+		<a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
+		  <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
+		</a>
+	      </header>	
+	      <figcaption class='gallery-caption'>
+		<div class="entry-summary">
+		  <h3>{{image.gallery-name}}</h3>
+		  <p>{{image.gallery-date}}</p>
+		</div>
+	      </figcaption>
+	    </figure>
+	  </figure>
+	{% endfor %}		
+      </div>			
+    </div><!-- END .wrapper -->
+  </section>
 
 <!-- jQuery -->    
 
