@@ -3,10 +3,11 @@ layout: page
 title: News
 description:
 header-img: "/img/reservation-bg.jpg"
-permalink: /news/
+permalink: /actu/
 --- 
 
-This is the news page!!
+###Page d'actualité!!
+=====================
 
 
 

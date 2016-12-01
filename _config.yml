@@ -15,7 +15,7 @@ scrollnav:
   #- Contact: "contact"
 
 nav:
-  - News: "/news/"
+  - Actualité: "/actu/"
   - Galerie Photo: "/galerie-photo/"
 
 # Team names, titles and social links
