@@ -170,10 +170,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.navbar-size {
+  max-width: 600px;
+}
+
 .navbar-default {
     border-color: transparent;
     background-color: #222;
-    max-width: 600px
 }
 
 .navbar-default .navbar-brand {
