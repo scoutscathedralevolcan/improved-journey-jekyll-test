@@ -6,7 +6,7 @@ header-img: "/img/reservation-bg.jpg"
 permalink: /actu/
 --- 
 
-###Page d'actualité!!
+### Page d'actualité!!
 =====================
 
 
