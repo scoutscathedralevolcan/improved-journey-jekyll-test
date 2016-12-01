@@ -8,10 +8,10 @@ description: "Write an awesome description for your new site here. You can edit 
 
 scrollnav:
   - Services: "services"
-  - Portfolio: "actualite-recente"
-  - About: "about"
-  - Team: "team"
-  - Clients: "clients"
+  - Actualité récente: "actualite-recente"
+  - À propos: "a-propos"
+  - L'équipe: "equipe"
+  - Partenaires: "partenaires"
   #- Contact: "contact"
 
 nav:
