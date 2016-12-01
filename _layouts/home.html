@@ -4,15 +4,12 @@ layout: default
 
     {% include header.html %}
     
-    {% for scrollelement in site.navscrool %}
-      set includescrollelement = "{{scrollelement[1]}}.html"
-      {% include {{includescrollelement}} %}
+    {% for navscroll_hash in site.scrollnav %}
+	{% for navscroll_item in navscroll_hash %}
+	  {% capture includescrollelement %}{{ navscroll_item[1] }}.html{% endcapture %}
+	  {% include {{ includescrollelement }} %}
+      {% endfor %}
     {% endfor %}
     
-<!--    {% include services.html %}
-    {% include actualite-recente.html %}
-    {% include about.html %}
-    {% include team.html %}
-    {% include clients.html %}-->
-<!--     {% include contact.html %} -->
+    
     {% include modals.html %}
