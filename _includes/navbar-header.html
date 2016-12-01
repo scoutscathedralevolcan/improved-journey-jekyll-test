@@ -28,14 +28,16 @@
                     
                     {% for nav_hash in site.scrollnav %}
 		      {% for nav_item in nav_hash %}
-			{% if page.url == "/" %}                
-			  <li>
-			    <a class="page-scroll" href="#{{ nav_item[1] }}">{{ nav_item[0] }}</a>
-			  </li>
-			{% else %}
-			  <li>
-			    <a class="page-scroll" href="{{ site.baseurl }}#{{ nav_item[1] }}">{{ nav_item[0] }}</a>
-			  </li>
+			{% if nav_item[0] != "hidden" %}
+			  {% if page.url == "/" %}                
+			    <li>
+			      <a class="page-scroll" href="#{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+			    </li>
+			  {% else %}
+			    <li>
+			      <a class="page-scroll" href="{{ site.baseurl }}#{{ nav_item[1] }}">{{ nav_item[0] }}</a>
+			    </li>
+			  {% endif %}
 			{% endif %}
 		      {% endfor %}
 		    {% endfor %}
