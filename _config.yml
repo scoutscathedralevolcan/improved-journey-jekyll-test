@@ -11,7 +11,7 @@ scrollnav:
   - Actualité récente: "actualite-recente"
   - À propos: "a-propos"
   - L'équipe: "equipe"
-  - hidden: "partenaires"
+  - Partenaires: "partenaires"
   #- Nous joindre: "contact"
 
 nav:
