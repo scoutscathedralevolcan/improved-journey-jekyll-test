@@ -46,7 +46,7 @@ echo "layout: page" >> ${current_galerie_file}
 echo "title: \"galerie photo\"" >> ${current_galerie_file}
 echo "description: \"${galerie_title}\"" >> ${current_galerie_file}
 echo "active: gallery" >> ${current_galerie_file}
-echo "header-img: \"img/galerie-photo-bg.jpg\"" >> ${current_galerie_file}
+echo "header-img: \"/img/galerie-photo-bg.jpg\"" >> ${current_galerie_file}
 echo "album-title: \"${galerie_title}\"" >> ${current_galerie_file}
 echo "permalink: /galerie-photo/${current_galerie_name}/" >> ${current_galerie_file}
 echo "images:" >> ${current_galerie_file}
@@ -65,7 +65,7 @@ echo "layout: page" >> ${galeries_collection_file}
 echo "title: \"galerie Photo\"" >> ${galeries_collection_file}
 echo "description:" >> ${galeries_collection_file}
 echo "active: gallery" >> ${galeries_collection_file}
-echo "header-img: \"img/galerie-photo-bg.jpg\"" >> ${galeries_collection_file}
+echo "header-img: \"/img/galerie-photo-bg.jpg\"" >> ${galeries_collection_file}
 echo "images:" >> ${galeries_collection_file}
 }
 
