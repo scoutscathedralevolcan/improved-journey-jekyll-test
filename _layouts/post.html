@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<section id="{{ post.date }}-{{post.modal-id}}">
+<section id="{{ post.date | date: "%Y-%m-%d" }}-{{post.modal-id}}">
   <div class="container">
     <div class="row text-center">
       {{ content }}
