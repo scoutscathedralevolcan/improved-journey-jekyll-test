@@ -1,7 +1,7 @@
 ---
 title: Dreams
 subtitle: Website Design
-layout: page
+layout: post
 modal-id: 7
 date: 2016-11-30
 img: dreams.png
