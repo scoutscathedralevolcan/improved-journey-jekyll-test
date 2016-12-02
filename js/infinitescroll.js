@@ -9,10 +9,12 @@ $(window).scroll(function() {
 function loadMoreContent() {
     // there should be a button, which leads to next posts
     var next = $("a.next").first();
+    var paginationnav = $("div.paginationnav");
     next.each(function(key, value) {
         var url = $(value).attr('href');
-        // remove button, so we can't load multiple times
+        // remove paginationnav, so we can't load multiple times
         next.remove();
+	paginationnav.remove();
         // adding a temp. dom object to load the next page
         var list = $("<div></div>");
         // call load method and get the div.post-list node
