@@ -37,7 +37,7 @@ layout: page
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}" class="previous">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}" class="next">Next</a>
     {% endif %}
   </div>
 </div>
