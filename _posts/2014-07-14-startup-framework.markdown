@@ -1,11 +1,10 @@
 ---
-title: The organe and the apple
+title: Startup Framework
 modal-id: 5
-date: 2016-11-14
+date: 2014-07-14
 img: startup-framework.png
 thumbnail: startup-framework-thumbnail.png
-description: A story about benefits of apples
+description: A snippet of code on how to start
 
 ---
-
 Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

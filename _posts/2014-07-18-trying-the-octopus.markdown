@@ -1,11 +1,10 @@
 ---
-title: A new post
-modal-id: 0
-date: 2016-11-27
+title: Trying the octopus
+modal-id: 1
+date: 2014-07-18
 img: dreams.png
 thumbnail: dreams-thumbnail.png
-description: C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
-
+description: A short story about how octopus live in the ocean
 ---
 
 Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

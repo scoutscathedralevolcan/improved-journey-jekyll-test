@@ -1,10 +1,10 @@
 ---
-title: The organe and the apple
-modal-id: 5
-date: 2016-11-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
-description: A story about benefits of apples
+title: Big mamal under the ice
+modal-id: 2
+date: 2014-07-17
+img: escape.png
+thumbnail: escape-thumbnail.png
+description: The wonderful world of the beluga
 
 ---
 
