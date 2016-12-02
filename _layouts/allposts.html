@@ -5,7 +5,7 @@ layout: page
 <!-- include infinitscroll reqirement (jquery min)-->
 <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- include infinitscroll plugins -->
-<script src="{{ site.baseurl }}/js/infinitescroll.js"></script>
+<script src="{{ site.baseurl | prepend: site.url }}/js/infinitescroll.js"></script>
 
 <div class="post-list">
     {% for post in paginator.posts %}
