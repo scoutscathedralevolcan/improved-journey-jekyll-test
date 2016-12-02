@@ -9,7 +9,7 @@ $(window).scroll(function() {
 function loadMoreContent() {
     // there should be a button, which leads to next posts
     var next = $("a.next").first();
-    var paginationnav = $("div.paginationnav");
+    var paginationnav = $("div.paginationnav").first();
     next.each(function(key, value) {
         var url = $(value).attr('href');
         // remove paginationnav, so we can't load multiple times
@@ -33,5 +33,8 @@ function loadMoreContent() {
             }
         });
     });
+    var paginationnav = $("div.paginationnav").first();
+    paginationnav.hide();
+    
 }
 
