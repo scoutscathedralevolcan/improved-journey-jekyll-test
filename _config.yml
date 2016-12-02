@@ -85,16 +85,9 @@ social:
   #- line: 3481 Melrose Place
   #- line: Beverly Hills, CA 90210
 
-categories:
-  layout: allposts.html
-  pagination: 9
-  generate_all: false
-  directory: actu
-  details:
-    all: {}
-    cat1:
-      title: Cat1
-      weight: 25
+paginate: 9
+paginate_path: "/actu/all/page:num/"
+
   
 exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", "docs/" ]
 
