@@ -2,14 +2,9 @@
 layout: default
 ---
 
-    {% include header.html %}
-    
     {% for navscroll_hash in site.scrollnav %}
 	{% for navscroll_item in navscroll_hash %}
 	  {% capture includescrollelement %}{{ navscroll_item[1] }}.html{% endcapture %}
 	  {% include {{ includescrollelement }} %}
       {% endfor %}
     {% endfor %}
-    
-    
-    {% include modals.html %}
