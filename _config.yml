@@ -100,7 +100,20 @@ exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfil
 
 gems: 
  - jekyll-paginate
+ - jekyll-sitemap
   
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# SiteMap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/writing/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
