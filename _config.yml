@@ -92,7 +92,9 @@ categories:
   directory: actu
   details:
     all: {}
-  
+    cat1:
+      title: Cat1
+      weight: 25
   
 exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", "docs/" ]
 
