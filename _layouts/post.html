@@ -2,28 +2,23 @@
 layout: page
 ---
 
-<section id="{{ page.date | date: "%Y-%m-%d" }}-{{page.modal-id}}">
-  <div class="container">
-    <ul class="list-inline item-details">
-      <li>
-	Date: <strong> {{ page.date | date: "%Y-%m-%d" }} </strong>
-      </li>
-      {% if page.author %}
-      <li>
-	Auteur: <strong> {{ page.author }} </strong>
-      </li>
-      {% endif %}
-      <li>
-	Lien permanent: <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> </strong>
-      </li>
-    </ul>
-    <div class="row text-center">
-      <p style="{font-style: italic;}"> {{ page.description}} </p>
-    </div>
-  
-    <div class="row text-center">
-      {{ content }}
-    </div>
-    
-  </div>
-</section>
+<ul class="list-inline item-details">
+  <li>
+    Date: <strong> {{ page.date | date: "%Y-%m-%d" }} </strong>
+  </li>
+  {% if page.author %}
+  <li>
+    Auteur: <strong> {{ page.author }} </strong>
+  </li>
+  {% endif %}
+  <li>
+    Lien permanent: <strong><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a> </strong>
+  </li>
+</ul>
+<div class="row text-center">
+  <p style="{font-style: italic;}"> {{ page.description}} </p>
+</div>
+
+<div class="row text-center">
+  {{ content }}
+</div>
