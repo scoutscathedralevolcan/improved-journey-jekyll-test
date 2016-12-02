@@ -98,6 +98,8 @@ categories:
   
 exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", "docs/" ]
 
+gems: 
+ - jekyll-paginate
   
 # Build settings
 markdown: kramdown
