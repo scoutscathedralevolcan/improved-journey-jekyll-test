@@ -1,12 +1,10 @@
 ---
 title: The organe and the aple
 subtitle: Website Design
-layout: post
 modal-id: 5
 date: 2016-11-14
 img: startup-framework.png
 thumbnail: startup-framework-thumbnail.png
-alt: image-alt
 description: A story about benefits of apples
 
 ---

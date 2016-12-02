@@ -1,12 +1,10 @@
 ---
 title: Golden eye
 subtitle: Website Design
-layout: post
 modal-id: 3
 date: 2016-12-01
 img: golden.png
 thumbnail: golden-thumbnail.png
-alt: image-alt
 description: The latest post of the moment
 
 ---

@@ -10,10 +10,12 @@ description: "Write an awesome description for your new site here. You can edit 
 defaults:
     -
         scope:
-            path: "actu"
+            path: "_posts"
             type: "posts"
         values:
             permalink: /actu/:year/:month/:day/:title/
+            layout: post
+            alt: image-alt
 
 # Use hidden as hash name to avoid adding a navigation link to the navbar
 scrollnav:
