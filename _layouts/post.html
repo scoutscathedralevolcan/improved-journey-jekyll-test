@@ -5,7 +5,25 @@ layout: page
 <section id="{{ post.date | date: "%Y-%m-%d" }}-{{post.modal-id}}">
   <div class="container">
     <div class="row text-center">
+      <ul class="list-inline item-details">
+	<li>
+	  Date: <strong> {{ post.date | date: "%Y-%m-%d" }} </strong>
+	</li>
+	{% if post.author %}
+	<li>
+	  Auteur: <strong> {{ post.author }} </strong>
+	</li>
+	{% endif %}
+	<li>
+	  Lien permanent: <strong><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> </strong>
+	</li>
+      </ul>
+      <p style="{font-style: italic;}"> {{ post.description}} </p>
+    </div>
+  
+    <div class="row text-center">
       {{ content }}
     </div>
+    
   </div>
 </section>
