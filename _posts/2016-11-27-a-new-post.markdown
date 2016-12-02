@@ -8,8 +8,8 @@ img: dreams.png
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+description: C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
 
 ---
 
-C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
+Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

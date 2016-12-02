@@ -1,13 +1,14 @@
 ---
-title: Dreams
+title: The organe and the aple
 subtitle: Website Design
 layout: post
-modal-id: 7
-date: 2016-11-30
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+modal-id: 5
+date: 2016-11-14
+img: startup-framework.png
+thumbnail: startup-framework-thumbnail.png
 alt: image-alt
-description: C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
+category: Web Development
+description: A story about benefits of apples
 
 ---
 
