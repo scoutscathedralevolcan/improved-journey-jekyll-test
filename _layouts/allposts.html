@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+<!-- include infinitscroll plugins -->
+<script src="{{ site.baseurl }}/js/infinitescroll.js"></script>
 
 <div class="post-list">
     {% for post in paginator.posts %}
@@ -31,13 +33,9 @@ layout: page
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
   {% endif %}
 </div>
