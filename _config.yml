@@ -86,7 +86,7 @@ social:
   #- line: Beverly Hills, CA 90210
 
 paginate: 3
-paginate_path: "/actu/all/"
+paginate_path: "/actu/all/page:num"
 
   
 exclude: ["less","node_modules","Gruntfile.js","package.json", "Gemfile","Gemfile.lock","generate-photo-galleries.sh", "*.gallerie.conf", "docs/" ]

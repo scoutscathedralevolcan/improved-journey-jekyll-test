@@ -1,6 +1,7 @@
 ---
 layout: page
 ---
+
 <div class="post-list">
     {% for post in paginator.posts %}
     <div class="post">
@@ -8,8 +9,15 @@ layout: page
         <h1 class="post-title">
             <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h1>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-            {% if post.meta %} &middot; {{ post.meta }}{% endif %}</p>
+        <ul class="list-inline item-details">
+	  <li>
+	    Date: <strong> {{ post.date | date: "%Y-%m-%d" }} </strong>
+	  </li>
+	  {% if post.author %}
+	  <li>
+	    Auteur: <strong> {{ post.author }} </strong>
+	  </li>
+	  {% endif %}
       </header>
       <article class="post-content">
         {{ post.excerpt | markdownify }}
@@ -17,7 +25,19 @@ layout: page
       <hr/>
     </div>
     {% endfor %}
-    {% if paginator.nextUrl %}
-    <a class="page-next" href="{{ paginator.nextUrl | prepend: site.baseurl }}">next</a>
-    {% endif %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
 </div>
