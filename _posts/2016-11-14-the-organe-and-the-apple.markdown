@@ -7,7 +7,6 @@ date: 2016-11-14
 img: startup-framework.png
 thumbnail: startup-framework-thumbnail.png
 alt: image-alt
-category: Web Development
 description: A story about benefits of apples
 
 ---
