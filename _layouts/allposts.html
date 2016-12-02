@@ -34,10 +34,10 @@ layout: page
   <!-- Pagination links -->
   <div class="pagination">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}index.html" class="previous">Previous</a>
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}/" class="previous">Previous</a>
     {% endif %}
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}index.html" class="next">Next</a>
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}/" class="next">Next</a>
     {% endif %}
   </div>
 </div>
