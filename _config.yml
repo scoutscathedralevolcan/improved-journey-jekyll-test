@@ -86,6 +86,7 @@ social:
   #- line: Beverly Hills, CA 90210
 
 categories:
+  layout: allposts.html
   pagination: 9
   generate_all: false
   directory: actu
