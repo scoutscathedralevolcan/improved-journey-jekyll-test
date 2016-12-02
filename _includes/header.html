@@ -1,5 +1,9 @@
 <!-- Header -->
-<header style="background-image: url('{{ site.baseurl }}{{page.header-img}}');">
+{% if page.header-img %}
+  <header style="background-image: url('{{ site.baseurl }}{{page.header-img}}');">
+{% else %}
+  <header style="background-image: url('{{ site.baseurl }}/img/default-bg.jpg');">
+{% endif %}
     <div class="container">
 	<div class="intro-text">
 	    <div class="intro-heading">{{ page.title }}</div>
