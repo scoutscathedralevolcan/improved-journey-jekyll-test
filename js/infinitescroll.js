@@ -87,7 +87,7 @@ function masonry_gallery($)
 		
 		});
 	}
-    }
+    });
 }
 		
 function beforeafter($){
