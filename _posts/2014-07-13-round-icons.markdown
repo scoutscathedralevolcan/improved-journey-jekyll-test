@@ -2,9 +2,9 @@
 title: Round Icons
 modal-id: 6
 date: 2014-07-15
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
-description: The wonderfull of round thing now avalible with the icons
+img: /img/portfolio/roundicons.png
+thumbnail: /img/portfolio/roundicons-thumbnail.png
+excerpt: The wonderfull of round thing now avalible with the icons
 
 ---
 

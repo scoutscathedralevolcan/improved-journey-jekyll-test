@@ -2,9 +2,9 @@
 title: Big mamal under the ice
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
-description: The wonderful world of the beluga
+img: /img/portfolio/escape.png
+thumbnail: /img/portfolio/escape-thumbnail.png
+excerpt: The wonderful world of the beluga
 
 ---
 

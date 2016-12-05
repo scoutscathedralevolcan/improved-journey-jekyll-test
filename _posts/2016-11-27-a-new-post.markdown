@@ -2,9 +2,9 @@
 title: A new post
 modal-id: 0
 date: 2016-11-27
-img: dreams.png
-thumbnail: dreams-thumbnail.png
-description: C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
+img: /img/portfolio/dreams.png
+thumbnail: /img/portfolio/dreams-thumbnail.png
+excerpt: C'est une nouvelle histoire qui commence avec le début de l'organisation de cette nouvelle édition 50 ans plus tard.
 
 ---
 

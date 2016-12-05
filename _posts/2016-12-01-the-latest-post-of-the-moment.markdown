@@ -2,9 +2,9 @@
 title: Golden eye
 modal-id: 3
 date: 2016-12-01
-img: golden.png
-thumbnail: golden-thumbnail.png
-description: The latest post of the moment
+img: /img/portfolio/golden.png
+thumbnail: /img/portfolio/golden-thumbnail.png
+excerpt: The latest post of the moment
 
 ---
 

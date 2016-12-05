@@ -2,9 +2,9 @@
 title: Treehouse
 modal-id: 4
 date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
-description: Living in a tree, the best place to live!
+img: /img/portfolio/treehouse.png
+thumbnail: /img/portfolio/treehouse-thumbnail.png
+excerpt: Living in a tree, the best place to live!
 
 ---
 

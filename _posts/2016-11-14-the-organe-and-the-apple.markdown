@@ -2,9 +2,9 @@
 title: The organe and the apple
 modal-id: 5
 date: 2016-11-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
-description: A story about benefits of apples
+img: /img/portfolio/startup-framework.png
+thumbnail: /img/portfolio/startup-framework-thumbnail.png
+excerpt: A story about benefits of apples
 
 ---
 
