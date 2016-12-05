@@ -50,7 +50,7 @@ $(window).load(function() {
 	
 function masonry_gallery()
 {
-    var $masonry_gallery = $('.post-list');
+    var $masonry_gallery = $('div.post-list');
     var next = $("a.next").first();
     var url = $(value).attr('href');
     $masonry_gallery.load(url + " div.paginationnav")
