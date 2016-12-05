@@ -56,9 +56,9 @@ function masonry_gallery()
       var url = $(value).attr('href');
       masonry_gallery.load(url + " div.paginationnav");
     }
-    if ( $masonry_gallery.length > 0 ) {
+    if ( masonry_gallery.length > 0 ) {
 
-	    $masonry_gallery.each( function(index, element) {
+	    masonry_gallery.each( function(index, element) {
 		    var $masonry_items = $(element).find('.gallery-item');
 	    
 		    // set masonry layout
@@ -73,7 +73,7 @@ function masonry_gallery()
 			    $('#gallery-filter li a').removeClass('active');
 			    $(this).addClass('active');
 			    var selector = $(this).attr('data-filter');
-			    $masonry_gallery.isotope({ filter: selector });
+			    masonry_gallery.isotope({ filter: selector });
 			    return false;
 		    });
 
@@ -82,11 +82,11 @@ function masonry_gallery()
 			    $('#grid-changer li a').removeClass('active');
 			    $(this).toggleClass('active');
 
-			    $masonry_items.removeClass('col-3');
-			    $masonry_items.removeClass('col-4');
-			    $masonry_items.removeClass('col-5');
-			    $masonry_items.toggleClass($(this).closest('li').attr('class'));
-			    $masonry_gallery.isotope('layout');
+			    masonry_items.removeClass('col-3');
+			    masonry_items.removeClass('col-4');
+			    masonry_items.removeClass('col-5');
+			    masonry_items.toggleClass($(this).closest('li').attr('class'));
+			    masonry_gallery.isotope('layout');
 		    });
 	    
 	    });
