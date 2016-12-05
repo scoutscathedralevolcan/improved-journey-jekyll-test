@@ -30,13 +30,13 @@ layout: default
 	      {% endif %}
 	    </ul>
 	    <div>
-	      <div style="float: left;">
+	      <div style="position: relative;">
 		<a href="{{ post.url | prepend: site.baseurl }}">
 		  <img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" />
 		</a>
 	      </div>
-	      <article class="post-content text-justify">
-		{{ post.excerpt | markdownify }}s
+	      <article class="text-justify">
+		{{ post.excerpt | markdownify }}
 	      </article>
 	    </div>
 	  </div>
