@@ -50,7 +50,7 @@ $(window).load(function() {
 	
 function masonry_gallery()
 {
-    var $masonry_gallery = $('div.post-list');
+    var $masonry_gallery = $("div.gallery.masonry-gallery.gallery.post-list");
     var next = $("a.next").first();
     next.each(function(key, value) {
       var url = $(value).attr('href');
