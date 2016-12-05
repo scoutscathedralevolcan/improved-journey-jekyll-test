@@ -15,7 +15,6 @@ function loadMoreContent() {
         var url = $(value).attr('href');
         // remove paginationnav, so we can't load multiple times
         next.remove();
-	paginationnav.remove();
         // adding a temp. dom object to load the next page
         var list = $("<div></div>");
         // call load method and get the div.post-list node
@@ -33,9 +32,8 @@ function loadMoreContent() {
                 );
             }
         });
+	paginationnav.load(url + " div.paginationnav")
     });
-    var paginationnav = $("div.paginationnav").first();
-    paginationnav.hide();
     
 }
 

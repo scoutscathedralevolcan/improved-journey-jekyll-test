@@ -12,46 +12,45 @@ layout: default
   <div class="container">
     <div class="row text-center">
       <div class="post-list">
-	  {% for post in paginator.posts %}
-	  <div class="post">
-	    <header class="post-header">
-	      <h1 class="post-title">
-		  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </h1>
-	    </header>
-	    <ul class="list-inline item-details">
-	      <li>
-		Date: <strong> {{ post.date | date: "%Y-%m-%d" }} </strong>
-	      </li>
-	      {% if post.author %}
-	      <li>
-		Auteur: <strong> {{ post.author }} </strong>
-	      </li>
-	      {% endif %}
-	    </ul>
-	    <div style="display: inline-block; width: 100%;">
-	      <div style="float: left">
-		<a href="{{ post.url | prepend: site.baseurl }}">
-		  <img src="{{ post.thumbnail | prepend: site.baseurl }}" />
-		</a>
-	      </div>
-	      <article class="text-justify">
-		{{ post.excerpt | markdownify }}
-	      </article>
+	{% for post in paginator.posts %}
+	<div class="post">
+	  <header class="post-header">
+	    <h1 class="post-title">
+		<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	    </h1>
+	  </header>
+	  <ul class="list-inline item-details">
+	    <li>
+	      Date: <strong> {{ post.date | date: "%Y-%m-%d" }} </strong>
+	    </li>
+	    {% if post.author %}
+	    <li>
+	      Auteur: <strong> {{ post.author }} </strong>
+	    </li>
+	    {% endif %}
+	  </ul>
+	  <div style="display: inline-block; width: 100%;">
+	    <div style="float: left">
+	      <a href="{{ post.url | prepend: site.baseurl }}">
+		<img src="{{ post.thumbnail | prepend: site.baseurl }}" />
+	      </a>
 	    </div>
+	    <article class="text-justify">
+	      {{ post.excerpt | markdownify }}
+	    </article>
 	  </div>
-	  <hr/>
-	  {% endfor %}
-
-	<!-- Pagination links -->
-	<div class="paginationnav">
-	  {% if paginator.previous_page %}
-	    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}/" class="previous">Previous</a>
-	  {% endif %}
-	  {% if paginator.next_page %}
-	    <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}/" class="next">Next</a>
-	  {% endif %}
 	</div>
+	<hr/>
+	{% endfor %}
+      </div>
+      <!-- Pagination links -->
+      <div class="paginationnav">
+	{% if paginator.previous_page %}
+	  <a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url }}/" class="previous">Previous</a>
+	{% endif %}
+	{% if paginator.next_page %}
+	  <a href="{{ paginator.next_page_path | prepend: site.baseurl | prepend: site.url }}/" class="next">Next</a>
+	{% endif %}
       </div>
     </div>
   </div>
