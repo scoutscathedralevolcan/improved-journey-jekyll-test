@@ -52,7 +52,7 @@ jQuery(window).load(function() {
 	
 function masonry_gallery()
 {
-    var $masonry_gallery = jQuery('.masonry-gallery.gallery');
+    var $masonry_gallery = jQuery('post-list');
     if ( $masonry_gallery.length > 0 ) {
 
 	    $masonry_gallery.each( function(index, element) {
