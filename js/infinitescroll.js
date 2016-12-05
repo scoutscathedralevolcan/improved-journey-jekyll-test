@@ -41,7 +41,7 @@ function loadMoreContent() {
 
 
 /* ********* WINDOW LOAD ********** */
-jQuery(window).load(function() {
+$(window).load(function() {
     masonry_gallery()
     beforeafter()
     var paginationnav = $("div.paginationnav").first();
@@ -50,7 +50,10 @@ jQuery(window).load(function() {
 	
 function masonry_gallery()
 {
-    var $masonry_gallery = jQuery('post-list');
+    var $masonry_gallery = $('.masonry-gallery.gallery');
+    var next = $("a.next").first();
+    var url = $(value).attr('href');
+    $masonry_gallery.load(url + " div.paginationnav")
     if ( $masonry_gallery.length > 0 ) {
 
 	    $masonry_gallery.each( function(index, element) {
@@ -64,23 +67,23 @@ function masonry_gallery()
 		    $(element).isotope('layout');
 			    
 		    // filtering
-		    jQuery('#gallery-filter li a').on('click', function(){
-			    jQuery('#gallery-filter li a').removeClass('active');
-			    jQuery(this).addClass('active');
-			    var selector = jQuery(this).attr('data-filter');
+		    $('#gallery-filter li a').on('click', function(){
+			    $('#gallery-filter li a').removeClass('active');
+			    $(this).addClass('active');
+			    var selector = $(this).attr('data-filter');
 			    $masonry_gallery.isotope({ filter: selector });
 			    return false;
 		    });
 
 		    // changing layout
-		    jQuery('#grid-changer li a').on('click', function(){
-			    jQuery('#grid-changer li a').removeClass('active');
-			    jQuery(this).toggleClass('active');
+		    $('#grid-changer li a').on('click', function(){
+			    $('#grid-changer li a').removeClass('active');
+			    $(this).toggleClass('active');
 
 			    $masonry_items.removeClass('col-3');
 			    $masonry_items.removeClass('col-4');
 			    $masonry_items.removeClass('col-5');
-			    $masonry_items.toggleClass(jQuery(this).closest('li').attr('class'));
+			    $masonry_items.toggleClass($(this).closest('li').attr('class'));
 			    $masonry_gallery.isotope('layout');
 		    });
 	    
@@ -89,14 +92,14 @@ function masonry_gallery()
 }
 		
 function beforeafter(){
-    var $before_after = jQuery('.before-after.gallery');
+    var $before_after = $('.before-after.gallery');
     if ( $before_after.length > 0 ) {
 	    $before_after.imageReveal({
 		    barWidth: 4,
 		    touchBarWidth: 50,
 		    startPosition: 0.5,
-		    width: jQuery('.before-after img').width(),
-		    height:  jQuery('.before-after img').height()
+		    width: $('.before-after img').width(),
+		    height:  $('.before-after img').height()
 	    });
     }
 }
