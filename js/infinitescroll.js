@@ -51,15 +51,10 @@ $(window).load(function() {
 function masonry_gallery()
 {
     var masonry_gallery = $("div.gallery.masonry-gallery.post-list").first();
-    var next = $("a.next").first();
-    next.each(function(key, value) {
-      var url = $(value).attr('href');
-      masonry_gallery.load(url + " div.paginationnav");
-    });
     if ( masonry_gallery.length > 0 ) {
 
 	    masonry_gallery.each( function(index, element) {
-		    var $masonry_items = $(element).find('.gallery-item');
+		    var masonry_items = $(element).find('.gallery-item');
 	    
 		    // set masonry layout
 		    $(element).isotope({
