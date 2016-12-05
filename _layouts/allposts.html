@@ -28,16 +28,17 @@ layout: default
 		Auteur: <strong> {{ post.author }} </strong>
 	      </li>
 	      {% endif %}
-	      <div style="float: left;">
-		<a href="{{ post.url | prepend: site.baseurl }}">
-		  <img src="img/portfolio/{{ post.thumbnail }}" />
-		</a>
-	      </div>
-	      <article class="post-content" style="padding-left: 10px;">
+	    </ul>
+	    <div style="float: left;">
+	      <a href="{{ post.url | prepend: site.baseurl }}">
+		<img src="{{ site.baseurl }}/img/portfolio/{{ post.thumbnail }}" />
+	      </a>
+	    </div>
+	    <article class="post-content" style="padding-left: 10px;">
 	      <p class"text-justify">{{ post.excerpt | markdownify }}</p>
 	    </article>
-	    <hr/>
 	  </div>
+	  <hr/>
 	  {% endfor %}
 
 	<!-- Pagination links -->
