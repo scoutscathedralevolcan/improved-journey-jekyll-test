@@ -2,8 +2,8 @@ $(window).scroll(function() {
     // get current scroll top in px, add window height and
     // check if this is greater than the document height minus 300
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
-        loadMoreContent();
-	masonry_gallery();
+        loadMoreContent(jQuery);
+	masonry_gallery(jQuery);
     }
 });
 
@@ -42,8 +42,8 @@ function loadMoreContent() {
 
 /* ********* WINDOW LOAD ********** */
 $(window).load(function() {
-    masonry_gallery()
-    beforeafter()
+    masonry_gallery(jQuery)
+    beforeafter(jQuery)
     var paginationnav = $("div.paginationnav").first();
     paginationnav.hide();
 });	
