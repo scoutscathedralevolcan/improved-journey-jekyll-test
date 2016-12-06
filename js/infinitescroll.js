@@ -57,7 +57,7 @@ function masonry_actu()
 	  percentPosition: true,
 	  fitRows: {
 	    gutter: '.gutter-sizer'
-	  }
+	  },
 	  itemSelector: '.post'
 	});
       }
