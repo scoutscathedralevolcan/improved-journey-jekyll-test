@@ -3,7 +3,6 @@ $(window).scroll(function() {
     // check if this is greater than the document height minus 300
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
         loadMoreContent();
-	masonry_actu();
     }
 });
 
@@ -52,7 +51,6 @@ function masonry_actu()
   $(function(){   
       var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
       if ( $masonry_actu.length > 0 ) {
-	window.confirm("Entering masonry-isotope application");
 	$masonry_actu.isotope({
 	  itemSelector: '.actu-item',
 	  masonry: {
