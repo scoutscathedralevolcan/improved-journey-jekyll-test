@@ -52,7 +52,7 @@ function masonry_actu()
   
   function masonryBlocks(){
   $(function(){   
-      var $masonry_actu = $('.actu.masonry-actu.post-list').first();
+      var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
       if ( $masonry_actu.length > 0 ) {
 	window.confirm("Entering masonry-isotope application");
 	$masonry_actu.isotope({
