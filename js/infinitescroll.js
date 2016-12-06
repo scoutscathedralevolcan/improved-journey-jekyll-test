@@ -3,7 +3,7 @@ $(window).scroll(function() {
     // check if this is greater than the document height minus 300
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
         loadMoreContent();
-	masonry_gallery();
+	masonry_actu();
     }
 });
 
@@ -42,7 +42,7 @@ function loadMoreContent() {
 
 /* ********* WINDOW LOAD ********** */
 $(window).load(function() {
-    masonry_actu()
+    masonry_actu();
     var paginationnav = $("div.paginationnav").first();
     paginationnav.hide();
 });	
