@@ -53,7 +53,7 @@ function masonry_actu()
       var $masonry_actu = $('div.post-list').first();
       if ( $masonry_actu.length > 0 ) {
 	$masonry_actu.isotope({
-	  layoutMode: 'fitRows'
+	  layoutMode: 'fitRows',
 	  percentPosition: true,
 	  fitRows: {
 	    gutter: '.gutter-sizer'
