@@ -38,24 +38,6 @@ function loadMoreContent() {
     
 }
 
-// Modify fitColumns layout mode to not resize container
-// and support percentage width items
-var FitColumns = Isotope.LayoutMode.modes.fitColumns;
-FitColumns.prototype._getContainerSize = function() {};
-
-FitColumns.prototype.needsResizeLayout = function() {
-  // don't trigger if size did not change
-  var size = getSize( this.isotope.element );
-  if ( this.isotope.size && size ) {
-    return size.innerHeight !== this.isotope.size.innerHeight ||
-      size.innerWidth !== this.isotope.size.innerWidth;
-  } else {
-    return false;
-  }
-};
-
-
-/* ********* WINDOW LOAD ********** */
 $(window).ready(function() {
     masonry_actu();
     var paginationnav = $("div.paginationnav").first();

@@ -166,38 +166,6 @@
 				height:  jQuery('.before-after img').height()
 			});
 		}
-
-		// changing blog layout
-		var $blog_layout = jQuery('#blog-timeline');
-		if ( $blog_layout.length > 0 ) {
-	
-			jQuery('#grid-changer li a').on('click', function(){
-				jQuery('#grid-changer li a').removeClass('active');
-				jQuery(this).toggleClass('active');
-
-				$blog_layout.closest('.wrapper').toggleClass('blog-masonry');
-				
-				if ( $blog_layout.closest('.wrapper').hasClass('blog-masonry') ) {
-					jQuery('#blog-post').animate({'left': '100%'}, 400, function() {
-						// set masonry layout
-						$blog_layout.isotope({
-							masonry: { columnWidth: $blog_layout.find('article')[0], gutter: 60 },
-							itemSelector: 'article'
-						});
-						$blog_layout.isotope('layout');
-						jQuery('#blog-post').hide();
-					});
-				}
-				else {
-					jQuery('#blog-post').show().animate({'left': '0'}, 400 );
-					$blog_layout.isotope('destroy');
-					
-					if ( $masonry_gallery.length > 0 ) {
-						$masonry_gallery.isotope('layout');
-					}
-				}
-			});
-		}
 	});
 	
 
