@@ -54,11 +54,10 @@ function masonry_actu()
   $(function(){   
       var $masonry_actu = $('.actu.masonry-actu.post-list').first();
       if ( $masonry_actu.length > 0 ) {
+	window.confirm("Entering masonry-isotope application");
 	$masonry_actu.isotope({
 	  itemSelector: '.actu-item',
-	  masonry: {
-	    columnWidth: 2
-	  }
+	  layoutMode: 'fitColumns'
 	});
       }
     });
