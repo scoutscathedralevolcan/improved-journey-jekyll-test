@@ -49,8 +49,6 @@ $(window).load(function() {
 	
 function masonry_actu()
 {
-  
-  function masonryBlocks(){
   $(function(){   
       var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
       if ( $masonry_actu.length > 0 ) {
@@ -61,6 +59,4 @@ function masonry_actu()
 	});
       }
     });
-  }
-
 }
