@@ -52,10 +52,8 @@ function masonry_actu()
       var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
       if ( $masonry_actu.length > 0 ) {
 	$masonry_actu.isotope({
-	  itemSelector: '.actu-item',
-	  masonry: {
-	    columnWidth: '.grid-sizer'
-	  }
+	  layoutMode: 'fitColumns',
+	  itemSelector: '.actu-item'
 	});
       }
     });
