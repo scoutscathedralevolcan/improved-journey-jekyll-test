@@ -23,7 +23,7 @@ function loadMoreContent() {
                 // copy all childrens of our temp container to the real container
                 // note: jQuery load will copy the div.post-list node as well,
                 // so use the childrens and move them
-	        var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
+	        var $masonry_actu = $('div.post-list').first();
                 list.children("div.post-list").children().each(
                     function(key, value){
 			$masonry_actu.append(value)
@@ -50,11 +50,11 @@ $(window).ready(function() {
 function masonry_actu()
 {
   $(function(){   
-      var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
+      var $masonry_actu = $('div.post-list').first();
       if ( $masonry_actu.length > 0 ) {
 	$masonry_actu.isotope({
 	  layoutMode: 'fitColumns',
-	  itemSelector: '.actu-item'
+	  itemSelector: '.post'
 	});
       }
     });
