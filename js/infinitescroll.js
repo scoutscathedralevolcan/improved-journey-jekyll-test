@@ -27,7 +27,7 @@ function loadMoreContent() {
 	        var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
                 list.children("div.post-list").children().each(
                     function(key, value){
-                        $masonry_actu.isotope( 'appended',value);
+                        $masonry_actu.isotope( 'appended', value);
                     }
                 );
             }
@@ -55,7 +55,9 @@ function masonry_actu()
 	window.confirm("Entering masonry-isotope application");
 	$masonry_actu.isotope({
 	  itemSelector: '.actu-item',
-	  layoutMode: 'fitColumns'
+	  masonry: {
+	    columnWidth: '.grid-sizer'
+	  }
 	});
       }
     });

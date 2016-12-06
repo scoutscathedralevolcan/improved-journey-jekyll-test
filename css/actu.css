@@ -1,5 +1,6 @@
 .actu { clear: both; width: 100%; margin: 0 0 2em 0; }
 .actu::after { content:""; display: block; clear: both; }
+.grid-sizer, .actu-item {width: 50%}
 .actu-item { position: relative; display: block; width: auto; }
 .actu-icon { position: relative; z-index: 9;  -webkit-transition: opacity .2s ease; -moz-transition: opacity .2s ease; -ms-transition: opacity .2s ease; -o-transition: opacity .2s ease; transition: opacity .2s ease; }
 .actu-icon a { display: block; width: 100%; height: 100%; position: relative; z-index: 9; }
