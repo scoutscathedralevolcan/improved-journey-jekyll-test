@@ -27,7 +27,7 @@ function loadMoreContent() {
                 list.children("div.post-list").children().each(
                     function(key, value){
 			$masonry_actu.append(value)
-                        $masonry_actu.isotope( 'appended', value);
+//                         $masonry_actu.isotope( 'appended', value);
                     }
                 );
             }
