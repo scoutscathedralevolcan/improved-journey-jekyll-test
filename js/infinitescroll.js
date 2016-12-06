@@ -24,10 +24,10 @@ function loadMoreContent() {
                 // copy all childrens of our temp container to the real container
                 // note: jQuery load will copy the div.post-list node as well,
                 // so use the childrens and move them
-                var container = $("div.post-list");
+	        var $masonry_actu = $('div.actu.masonry-actu.post-list').first();
                 list.children("div.post-list").children().each(
                     function(key, value){
-                        container.append(value);
+                        $masonry_actu.isotope( 'appended',value);
                     }
                 );
             }
