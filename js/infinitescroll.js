@@ -41,7 +41,7 @@ function loadMoreContent() {
 
 
 /* ********* WINDOW LOAD ********** */
-$(window).load(function() {
+$(window).ready(function() {
     masonry_actu();
     var paginationnav = $("div.paginationnav").first();
     paginationnav.hide();
