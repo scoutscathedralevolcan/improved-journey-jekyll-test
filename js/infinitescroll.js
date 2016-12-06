@@ -3,7 +3,7 @@ $(window).scroll(function() {
     // check if this is greater than the document height minus 300
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300) {
         loadMoreContent();
-	$(window).load(masonry_gallery());
+	masonry_gallery();
     }
 });
 
@@ -42,60 +42,25 @@ function loadMoreContent() {
 
 /* ********* WINDOW LOAD ********** */
 $(window).load(function() {
-    masonry_gallery()
+    masonry_actu()
     var paginationnav = $("div.paginationnav").first();
     paginationnav.hide();
 });	
 	
-function masonry_gallery()
+function masonry_actu()
 {
-  // masonry gallery
-  var $masonry_gallery = $('.gallery.masonry-gallery.post-list').first();
-  if ( $masonry_gallery.length > 0 ) {
-	  $masonry_gallery.each( function(index, element) {
-		  var $masonry_items = $(element).find('.gallery-item');
-	  
-		  // set masonry layout
-		  $(element).isotope({
-			  masonry: { columnWidth: $(element).find('.gallery-item')[0] },
-			  itemSelector: '.gallery-item'
-		  });
-		  $(element).isotope('layout');
-			  
-		  // filtering
-		  $('#gallery-filter li a').on('click', function(){
-			  $('#gallery-filter li a').removeClass('active');
-			  $(this).addClass('active');
-			  var selector = $(this).attr('data-filter');
-			  $masonry_gallery.isotope({ filter: selector });
-			  return false;
-		  });
-
-		  // changing layout
-		  $('#grid-changer li a').on('click', function(){
-			  $('#grid-changer li a').removeClass('active');
-			  $(this).toggleClass('active');
-
-			  $masonry_items.removeClass('col-3');
-			  $masonry_items.removeClass('col-4');
-			  $masonry_items.removeClass('col-5');
-			  $masonry_items.toggleClass($(this).closest('li').attr('class'));
-			  $masonry_gallery.isotope('layout');
-		  });
-	  
-	  });
-  }
-
-
-  // before-after
-  var $before_after = $('.before-after.gallery');
-  if ( $before_after.length > 0 ) {
-    $before_after.imageReveal({
-		  barWidth: 4,
-		  touchBarWidth: 50,
-		  startPosition: 0.5,
-		  width: $('.before-after img').width(),
-		  height:  $('.before-after img').height()
+  
+  function masonryBlocks(){
+  $(function(){   
+      var $masonry_actu = $('.actu.masonry-actu.post-list').first();
+      if ( $masonry_actu.length > 0 ) {
+	$masonry_actu.isotope({
+	  itemSelector: '.actu-item',
+	  masonry: {
+	    columnWidth: 2
+	  }
+	});
+      }
     });
   }
 
