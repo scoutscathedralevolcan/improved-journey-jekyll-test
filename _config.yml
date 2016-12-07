@@ -20,7 +20,7 @@ defaults:
 
 # Use hidden as hash name to avoid adding a navigation link to the navbar
 scrollnav:
-  - Services: "services"
+  - hidden: "0front"
   - Actualité récente: "actualite-recente"
   - À propos: "a-propos"
   - L'équipe: "equipe"
