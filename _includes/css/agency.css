@@ -281,6 +281,9 @@ header {
     -o-background-size: cover;
 }
 
+/* Layouts */
+header.fullscreen { max-height: 100%; overflow-y: hidden; overflow-x: hidden; }
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;

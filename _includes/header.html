@@ -1,15 +1,50 @@
 <!-- Header -->
-{% if page.header-img %}
+{% if page.url == "/" %}
+<head>
+  <link rel="stylesheet" href="{{ "/css/galeries.css" | prepend: site.baseurl }}">
+</head>
+{% endif %}
+
+{% if page.kenburns-images %}
+  <header class="fullscreen">
+{% elsif page.header-img %}
   <header style="background-image: url('{{ site.baseurl }}{{page.header-img}}');">
 {% else %}
   <header style="background-image: url('{{ site.baseurl }}/img/default-bg.jpg');">
 {% endif %}
+    {% if page.kenburns-images %}
+    <div class="gallery fullscreen-gallery kenburns-gallery">
+    {% else %}
     <div class="container">
+    {% endif %}
 	<div class="intro-text">
 	    <div class="intro-heading">{{ page.title }}</div>
 	    {% if page.subtitle %}
 	    <div class="intro-lead-in">{{ page.subtitle }}</div>
 	    {% endif %}
 	</div>
+
+	{% if page.kenburns-images %}
+	<canvas id="kenburns"></canvas>
+	{% for image in page.kenburns-images %}  	
+	<figure class="gallery-item">
+	  <header class='gallery-icon'>
+	    <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
+	  </header>	
+	</figure>
+	{% endfor %}
+	{% endif %}
+		
     </div>
 </header>
+
+{% if page.url == "/" %}
+  <!-- Modernizr -->
+  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+  <!-- include gallery cycle plugin -->
+<script src="{{ site.baseurl }}/js/jquery.cycle.min.js"></script>
+<!-- include kenburns plugins -->
+<script src="{{ site.baseurl }}/js/kenburns.min.js"></script>
+  <!-- include custom script -->
+  <script src="{{ site.baseurl }}/js/kenburns-gallery.js"></script>
+{% endif %}
