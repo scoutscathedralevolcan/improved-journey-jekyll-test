@@ -16,7 +16,7 @@
 	.post-list .post .grid-sizer {width: 98% !important;}
 }
 
-@media screen and (max-width: 640px) and (orientation: portrait) {
+@media screen and (max-width: 640px) {
 	/*galleries adapted*/
 	.post-list .post .grid-sizer {width: 98% !important;}
 	  
