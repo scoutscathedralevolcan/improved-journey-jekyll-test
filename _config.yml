@@ -18,7 +18,7 @@ paginate_path: "/actu/:year/:month/:day/:title/"
 defaults:
     -
         scope:
-            path: "_posts"
+            path: "/_posts"
         values:
             permalink: /actu/:year/:month/:day/:title/
             layout: post
