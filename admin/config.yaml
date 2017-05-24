@@ -1,8 +1,14 @@
 backend:
-  name: test-repo
-  delay: 0.1
+  name: netlify-api
+  url: http://localhost:8080
 
-media_folder: "assets/uploads"
+production:
+  backend:
+    name: github-api
+    repo:  scoutscathedralevolcan/improved-journey-jekyll-test # Change this to your repo
+    branch: master
+
+media_folder: "images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -17,42 +23,28 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
-
-  - name: "faq" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "FAQ" # Used in the UI, ie.: "New Post"
-    folder: "_faqs"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
-      - {label: "Question", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Answer", name: "body", widget: "markdown"}
-
-  - name: "settings"
-    label: "Settings"
-    editor:
-      preview: false
-    files:
-      - name: "general"
-        label: "Site Settings"
-        file: "_data/settings.json"
-        description: "General Site Settings"
-        fields:
-          - {label: "Global title", name: "site_title", widget: "string"}
-          - label: "Post Settings"
-            name: posts
-            widget: "object"
-            fields:
-              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
-              - {label: "Default Author", name: author, widget: string}
-              - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
-
-      - name: "authors"
-        label: "Authors"
-        file: "_data/authors.yml"
-        description: "Author descriptions"
-        fields:
-          - name: authors
-            label: Authors
-            widget: list
-            fields:
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Description", name: "description", widget: "markdown"}
+  - name: "index"
+    label: "Index"
+    file: "index.html"
+    fields:
+      - {label: "home", name: "layout", widget: "string"}
+      - {label: "Page Title", name: "title", widget: "string"}
+    
+#  - name: "settings"
+#    label: "Settings"
+#    editor:
+#      preview: false
+#    files:
+#      - name: "general"
+#        label: "Site Settings"
+#        file: "_data/settings.json"
+#        description: "General Site Settings"
+#        fields:
+#          - {label: "Global title", name: "site_title", widget: "string"}
+#          - label: "Post Settings"
+#            name: posts
+#            widget: "object"
+#            fields:
+#              - {label: "Number of posts on frontpage", name: front_limit, widget: number}
+#              - {label: "Default Author", name: author, widget: string}
+#              - {label: "Default Thumbnail", name: thumb, widget: image, class: "thumb"}
