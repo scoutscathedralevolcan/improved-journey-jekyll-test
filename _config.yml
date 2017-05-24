@@ -14,15 +14,7 @@ gems:
 
 paginate: 3
 paginate_path: "/actu/all/page:num"
-
-defaults:
-    -
-        scope:
-            path: "/_posts"
-        values:
-            permalink: /actu/:year/:month/:day/:title/
-            layout: post
-            alt: image-alt
+permalink: /actu/:year/:month/:day/:title/
 
 # Use hidden as hash name to avoid adding a navigation link to the navbar
 scrollnav:
