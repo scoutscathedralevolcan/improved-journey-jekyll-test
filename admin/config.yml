@@ -9,6 +9,7 @@ production:
     repo:  scoutscathedralevolcan/improved-journey-jekyll-test # Change this to your repo
     branch: master
 
+publish_mode: editorial_workflow
 media_folder: "images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
