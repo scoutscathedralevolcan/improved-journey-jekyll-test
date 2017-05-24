@@ -1,11 +1,11 @@
 backend:
-  name: github-api
+  name: github
   repo:  scoutscathedralevolcan/improved-journey-jekyll-test
   branch: master
   
 production:
   backend:
-    name: github-api
+    name: github
     repo:  scoutscathedralevolcan/improved-journey-jekyll-test # Change this to your repo
     branch: master
 
