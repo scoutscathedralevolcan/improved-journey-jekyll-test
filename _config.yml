@@ -19,7 +19,6 @@ defaults:
     -
         scope:
             path: "_posts"
-            type: "posts"
         values:
             permalink: /actu/:year/:month/:day/:title/
             layout: post
