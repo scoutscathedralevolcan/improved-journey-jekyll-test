@@ -43,7 +43,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "À propos"
         file: "_includes/a-propos.html"
         fields:
-          - {label: "Contenu", name: "body", widget: "text"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
       
 
 #    
