@@ -27,15 +27,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-  - name: "index"
-    label: "Index"
-    file: "index"
-    meta:
-      - {label: "Layout", name: "layout", widget: "string", default: "home"}
-    fields:
-      - {label: "Page Title", name: "title", widget: "string"}
-      - {label: "Page Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Header Image", name: "header-img", widget: "image"}      
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Home"
+        file: "index.md"
+        meta:
+          - {label: "Layout", name: "layout", widget: "string", default: "home"}
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Page Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Header Image", name: "header-img", widget: "image"}      
       
 
 #    
