@@ -13,8 +13,8 @@ media_folder: "images" # Folder where user uploaded files should go
 
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "_posts"
+    label: "Posts" # Used in the UI, ie.: "New Post"
+    folder: "/_posts"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -22,8 +22,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
       - {label: "Cover Image", name: "thumbnail", widget: "image", required: false, tagname: ""}
       - {label: "Header Image", name: "img", widget: "image", required: false, tagname: ""}
-    meta:
-      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Excerpt", name: "excerpt", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
 #  - name: "index"
 #    label: "Index"
 #    file: "index.html"
