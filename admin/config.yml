@@ -1,7 +1,8 @@
 backend:
-  name: netlify-api
-  url: http://localhost:8080
-
+  name: github-api
+  repo:  scoutscathedralevolcan/improved-journey-jekyll-test
+  branch: master
+  
 production:
   backend:
     name: github-api
@@ -19,10 +20,10 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mma"}
-      - {label: "Cover Image", name: "image", widget: "image", required: false, tagname: ""}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Cover Image", name: "thumbnail", widget: "image", required: false, tagname: ""}
+      - {label: "Header Image", name: "img", widget: "image", required: false, tagname: ""}
     meta:
-      - {label: "SEO Description", name: "description", widget: "text"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
 #  - name: "index"
 #    label: "Index"
 #    file: "index.html"
