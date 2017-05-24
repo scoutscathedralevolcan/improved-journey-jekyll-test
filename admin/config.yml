@@ -31,14 +31,19 @@ collections: # A list of collections the CMS should be able to edit
     label: "Pages"
     files:
       - name: "home"
-        label: "Home"
+        label: "Accueil"
         file: "index.md"
         meta:
           - {label: "Layout", name: "layout", widget: "string", default: "home"}
         fields:
           - {label: "Page Title", name: "title", widget: "string"}
           - {label: "Page Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Header Image", name: "header-img", widget: "image"}      
+          - {label: "Header Image", name: "header-img", widget: "image"}
+      - name: "about"
+        label: "À propos"
+        file: "_includes/a-propos.html"
+        fields:
+          - {label: "Contenu", name: "body", widget: "text"}
       
 
 #    
