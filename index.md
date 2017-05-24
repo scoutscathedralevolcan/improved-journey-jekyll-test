@@ -2,7 +2,7 @@
 layout: home
 header-img: "/img/header-bg.jpg"
 postlimit: 6
-title: "It's Nice To Meet You"
+title: "It's Nice To Meet You!"
 subtitle: "Welcome To Our Studio!"
 kenburns-images:
  - image_path: /img/slider/home01.jpg
