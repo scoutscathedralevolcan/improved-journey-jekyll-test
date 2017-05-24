@@ -23,13 +23,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
-  - name: "index"
-    label: "Index"
-    file: "index.html"
-    fields:
-      - {label: "home", name: "layout", widget: "string"}
-      - {label: "Page Title", name: "title", widget: "string"}
-    
+#  - name: "index"
+#    label: "Index"
+#    file: "index.html"
+#    fields:
+#      - {label: "home", name: "layout", widget: "string"}
+#      - {label: "Page Title", name: "title", widget: "string"}
+#    
 #  - name: "settings"
 #    label: "Settings"
 #    editor:
