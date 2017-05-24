@@ -13,7 +13,7 @@ gems:
  - jekyll-sitemap
 
 paginate: 3
-paginate_path: "/actu/:year/:month/:day/:title/"
+paginate_path: "/actu/all/page:num"
 
 defaults:
     -
